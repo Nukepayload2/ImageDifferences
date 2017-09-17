@@ -1,0 +1,1 @@
+./ImgDiff.NetCore2 图片A 图片B 输出图片

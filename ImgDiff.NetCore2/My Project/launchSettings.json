@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImgDiff.NetCore2": {
+      "commandName": "Project",
+      "commandLineArgs": "图片A 图片B 输出图片"
+    }
+  }
+}

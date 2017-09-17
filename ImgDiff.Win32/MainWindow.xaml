@@ -1,0 +1,44 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImgDiff.Win32"
+        mc:Ignorable="d" UseLayoutRounding="True"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <VisualBrush TileMode="Tile" Stretch="None" Viewport="0,0,16,16" ViewportUnits="Absolute">
+                <VisualBrush.Visual>
+                    <Grid Width="16" Height="16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Rectangle Fill="Gray"/>
+                        <Rectangle Fill="LightGray" Grid.Row="1" Grid.Column="1"/>
+                    </Grid>
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </Grid.Background>
+        <TextBlock FontSize="24" Text="图片1" Background="#BFFFFFFF"/>
+        <TextBlock FontSize="24" Grid.Column="1" Text="图片2" Background="#BFFFFFFF"/>
+        <TextBlock FontSize="24" Grid.Column="2" Text="比较结果" Background="#BFFFFFFF"/>
+        <Rectangle x:Name="ImgImage1" AllowDrop="True" Fill="LightGray" Grid.Row="1"/>
+        <Rectangle x:Name="ImgImage2" AllowDrop="True" Fill="DarkGray" Grid.Row="1" Grid.Column="1"/>
+        <Rectangle x:Name="ImgImage3" Fill="Gray" Grid.Row="1" Grid.Column="2"/>
+    </Grid>
+</Window>
