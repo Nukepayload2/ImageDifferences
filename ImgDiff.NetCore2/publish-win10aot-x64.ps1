@@ -1,0 +1,1 @@
+dotnet publish -c release -r win10-x64-aot -o linked-win10-x64-aot

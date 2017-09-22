@@ -1,8 +1,8 @@
-Imports ConsoleFramework
+Imports Nukepayload2.ConsoleFramework
 
 Module Program
 
     Sub Main(args As String())
-        Application.Run(args, GetType(Program))
+        Application.Run(Of App)(args)
     End Sub
 End Module

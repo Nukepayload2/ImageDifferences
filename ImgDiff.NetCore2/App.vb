@@ -1,23 +1,22 @@
 ﻿Imports System.ComponentModel.DataAnnotations
 Imports System.Drawing
 Imports System.IO
-Imports ConsoleFramework
+Imports Nukepayload2.ConsoleFramework
 
-<EntryClass>
-Public Module App
-    <EntryMethod("-")>
+Public Class App
+    <EntryMethod()>
     Public Sub StartUp(
-        <Display(Name:="src", Description:="要比较的原图的文件夹。")>
+        <Display(Name:="src", ShortName:="s", Description:="要比较的原图的文件夹。")>
         srcDir1$,
-        <Display(Name:="cmp", Description:="要比较的新图的文件夹。")>
+        <Display(Name:="cmp", ShortName:="c", Description:="要比较的新图的文件夹。")>
         srcDir2$,
-        <Display(Name:="dst", Description:="输出比较结果的文件夹。")>
+        <Display(Name:="dst", ShortName:="d", Description:="输出比较结果的文件夹。")>
         destDir$,
-        <Display(Name:="nogpu", Description:="不要使用 OpenCL。")>
+        <Display(Name:="nogpu", ShortName:="ng", Description:="不要使用 OpenCL。")>
         Optional useOpenCL As Boolean = True,
         <Display(Name:="raw", Description:="使用 OpenCL 时不要用 Imaging 写法，而是用直接处理图像后缓冲区的写法。如果不使用 OpenCL, 这个标签会被忽略。")>
         Optional useImaging As Boolean = True,
-        <Display(Name:="repeat", Description:="指定重复次数, 用于评估当前计算机采取哪种计算模式效率更高。")>
+        <Display(Name:="repeat", ShortName:="r", Description:="指定重复次数, 用于评估当前计算机采取哪种计算模式效率更高。")>
         Optional repeatCount As Integer = 1
     )
         Console.WriteLine($"图片比较器")
@@ -63,4 +62,4 @@ Public Module App
         timer.Stop()
         Console.WriteLine($"处理结束。处理了 {fileCount} 个文件, 用时 {timer.ElapsedMilliseconds} 毫秒。")
     End Sub
-End Module
+End Class

@@ -16,9 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ConsoleFramework" Version="1.0.0" />
     <PackageReference Include="CoreCompat.System.Drawing.v2" Version="5.2.0-preview1-r131" />
     <PackageReference Include="ILLink.Tasks" Version="0.1.4-preview-981901" />
+    <PackageReference Include="Nukepayload2.ConsoleFramework" Version="1.1.0" />
     <PackageReference Include="OpenCLBasic" Version="1.0.2" />
   </ItemGroup>
 
