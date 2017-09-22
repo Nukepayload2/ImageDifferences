@@ -1,1 +1,1 @@
-dotnet publish -c release -r osx-x64 -o linked-osx-x64
+dotnet publish -c release -r osx-x64 -o bin/linked-osx-x64

@@ -1,1 +1,1 @@
-dotnet publish -c release -r android-arm64 -o linked-android-arm64
+dotnet publish -c release -r android-arm64 -o bin/linked-android-arm64

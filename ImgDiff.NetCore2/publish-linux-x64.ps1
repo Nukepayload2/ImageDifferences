@@ -1,1 +1,1 @@
-dotnet publish -c release -r linux-x64 -o linked-linux-x64
+dotnet publish -c release -r linux-x64 -o bin/linked-linux-x64
