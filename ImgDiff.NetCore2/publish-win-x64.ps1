@@ -1,1 +1,1 @@
-dotnet publish -c release -r win-x64 -o bin/linked-win-x64
+dotnet publish ImgDiff.NetCore2.vbproj -c release -r win-x64 -o bin/linked-win-x64
